@@ -6,7 +6,7 @@
   --body-bg-color: linear-gradient(to bottom,#d5c3da 0%,#d5c3df 20%, rgba(255, 255, 249, 0.1) 50%, #d5c3df 80%),
                   linear-gradient(to right,#d5c3df 0%,#d5c3df 15%, rgba(255, 255, 249, 0.1) 50%, #d5c3df 85%);
 }
-.app,.home,.adminlogin,.login{
+.app,.home,.adminlogin,.login, .userdash{
   min-height: 100vh;
   max-height: fit-content;
   background: var(--body-bg-color);
@@ -97,6 +97,17 @@
     background-color: var(--text-color-dark);
     transition: 0.3s;
    }
+   .create{
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    padding: 0;
+    border-radius: 5px;
+  }
+  .yourtask:hover{
+    .create,.toggle{
+      background-color: #3d252a !important;
+    }
+   }
    .click:hover{
     transition: 0.3s;
     background-color: var(--bg-color-light);
@@ -120,7 +131,72 @@
    .login{
     justify-content: center;
    }
-
+   .navbar{
+    background-color: var(--bg-color-dark);
+   }
+   .navbar-brand{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: var(--text-color-dark);
+    text-shadow: 1px 1px 0px #001011;
+    font-weight: bolder;
+   }
+   .avatar {
+    height: 42px;
+    width: 42px;
+    /* padding:0 10px; */
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px black;
+    color: #000;
+    background-color: #e1e1e1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+.ytask{
+  overflow: hidden;
+  min-width: 150px ;
+  margin:10px 5px 0px;
+}
+.yt{
+  padding: 10px 0 5px 0;
+  position: relative;
+  bottom: 7px;
+  left: 3px;
+}
+.toggle{
+  padding: 8px 8px 0 0;
+  display: inline-block;
+  width: fit-content;
+  vertical-align: middle;
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
+  height: 40px;
+  border: none;
+  border-radius:5px;
+}
+.taskbox{
+  margin-bottom: 20px;
+  border: 5px solid var(--bg-color-light);
+  padding: 10px 20px;
+  overflow:hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+.taskbox:hover{
+  scale: 1.1;
+  transition: 0.5s;
+}
+.taskbox-title, .taskbox-description, .taskbox-status, .taskbox-priority {
+  font-size: larger;
+  font-weight: 400;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 @media only screen and (max-width:992px){
   .buttons{

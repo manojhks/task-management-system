@@ -8,6 +8,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { HomePage } from './HomePage';
 import { AdminLogin } from './AdminLogin';
+import {UserDashboard} from './UserDashboard'
 
 export const AnimatedRoutes = () => {
     const location = useLocation()
@@ -19,6 +20,7 @@ export const AnimatedRoutes = () => {
     <Route path='/adminlogin' element={<AdminLogin/>}/>
     <Route path='/login' element={<LoginPage/>} />
     <Route path='/register' element={<RegisterPage/>} />
+    <Route path='/user' element={<UserDashboard/>} />
   </Routes>
   </AnimatePresence>
   )

@@ -1,8 +1,32 @@
 {
-    "users":[],
-    "admin":[
-        {
-            "passkey":"a"
-        }
-    ]
+  "users": [
+    {
+      "id": "b43f",
+      "username": "manojh30",
+      "email": "manojh.2010015@gmail.com",
+      "password": "12345",
+      "tasks": [
+        { "id": 1, "title": "Task 1", "description": "Complete the project", "status": "Pending", "priority": "High" }
+      ]
+    },
+    {
+      "id": "231d",
+      "username": "manojh",
+      "email": "manojh@gmail.com",
+      "password": "145",
+      "tasks": [
+        { "id": 2, "title": "Task 2", "description": "Complete the project", "status": "Pending", "priority": "Low" }
+      ]
+    }
+
+  ],
+  "admin": [
+    {
+      "passkey": "a",
+      "id": "8b8f"
+    }
+  ],
+  "task":[
+
+  ]
 }

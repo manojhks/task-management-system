@@ -18,8 +18,8 @@ export const HomePage = () => {
   return (
     <motion.div className='home'
     initial={{width:0, opacity:0}}
-    animate={{width:"100vw" , opacity:1}}
-    exit={{opacity: 0, y:window.innerHeight , transition:{duration: 0.2}}}
+    animate={{width:"100%" , opacity:1}}
+    exit={{ opacity: 0, x: window.innerWidth, transition: { duration: 0.05 } }}
     >
     <div className='container buttons'>
     <Button outline className='home-button' size="lg" onClick={navAdmin} ><span className='home-button-icon'><i className="bi bi-person-fill-gear"></i></span>&nbsp;{' '}<span className='home-button-name'>Admin</span></Button>
