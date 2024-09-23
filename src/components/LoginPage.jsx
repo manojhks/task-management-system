@@ -181,7 +181,7 @@ export const LoginPage = () => {
           <Input required className='input' type='password' name='password' value={loginData.password} placeholder='Enter your password' onChange={handleLoginInput} />
         </div>
         <div className='mt-4'>
-          <button className='click' onClick={handleLogin}><p>Login</p></button>
+          <button className='click pt-2' onClick={handleLogin}><p>Login</p></button>
         </div>
         {success && <p style={{ marginTop: "5px", marginBottom: "-15px", borderRadius: "3px", color: "#ffc0cb", textShadow: "1px 1px black" }}>{success}</p>}
         {error && <p style={{ marginTop: "5px", marginBottom: "-15px", borderRadius: "3px", color: "#ffc0cb", textShadow: "1px 1px black" }}>{error}</p>}

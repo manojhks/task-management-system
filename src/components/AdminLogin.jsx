@@ -75,7 +75,7 @@ export const AdminLogin = () => {
             <label className='inputlabel' htmlFor='adminIn'>Secret key :</label>
             <Input id='adminIn' className='input' type='password' name='passkey' placeholder='Secret key please...' onChange={handleAdminKey} />
             </div>
-            <button className='click' onClick={handleAdminLogin} ><p>Login</p></button>
+            <button className='click pt-2' onClick={handleAdminLogin} ><p>Login</p></button>
             {success&& <p style={{backgroundColor:"#ffc0cb",marginBottom:"-15px",borderRadius:"3px",color:"green"}} >{success}</p>}
             {error&& <p style={{backgroundColor:"#ffc0cb",marginBottom:"-15px",borderRadius:"3px",color:"red"}} >{error}</p>}
         </div>

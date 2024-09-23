@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 export const RegisterPage = () => {
   const nav = useNavigate()
   const [register, setRegister] = useState({
-    username: "",  // Added username
+    username: "",
     email: "",
     password: ""
   })
@@ -17,7 +17,7 @@ export const RegisterPage = () => {
 
   const checkUsername = async(username) => {
     try{
-    const response = await axios.get(`http://localhost:3001/users?username=${username}`)
+    const response = await axios.get(`http://localhost:3001/users?username=${username.toLowerCase()}`)
     const res = response.data
     if(res.length === 0){
       setUsernameAvailable(true)
@@ -33,7 +33,7 @@ export const RegisterPage = () => {
   useEffect(() =>{
    const timer = setTimeout(() => {
     if(register.username){
-      checkUsername(register.username)
+      checkUsername(register.username.toLowerCase())
     }
    }, 500);
    return () => clearTimeout(timer)
@@ -42,7 +42,8 @@ export const RegisterPage = () => {
   const handleRegisterInput = (e) =>{
     const {name, value} = e.target
     setRegister({
-      ...register, [name]: value
+      ...register,
+      [name]: name === 'username' ? value.toLowerCase() : value
     })
   }
   
@@ -119,7 +120,7 @@ export const RegisterPage = () => {
         </div>
 
         <div className='mt-4'>
-          <button className='click' onClick={handleRegister}>
+          <button className='click pt-2' onClick={handleRegister}>
             <p>Register</p>
           </button>
         </div>

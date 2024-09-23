@@ -9,6 +9,8 @@ import { AnimatePresence } from 'framer-motion';
 import { HomePage } from './HomePage';
 import { AdminLogin } from './AdminLogin';
 import {UserDashboard} from './UserDashboard'
+import { AddTask } from './AddTask';
+import { EditTask } from './EditTask';
 
 export const AnimatedRoutes = () => {
     const location = useLocation()
@@ -21,6 +23,8 @@ export const AnimatedRoutes = () => {
     <Route path='/login' element={<LoginPage/>} />
     <Route path='/register' element={<RegisterPage/>} />
     <Route path='/user' element={<UserDashboard/>} />
+    <Route path='/addtask'  element={<AddTask/>} />
+    <Route path='/edittask/:taskId' element={<EditTask />} />
   </Routes>
   </AnimatePresence>
   )
