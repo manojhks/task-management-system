@@ -6,15 +6,16 @@ import { Input } from 'reactstrap';
 import { useNavigate } from 'react-router-dom';
 
 export const AddTask = () => {
+  const { username } = useContext(UserNameContext);
   const [newTask, setNewTask] = useState({
     title: "",
     description: "",
-    status: "Pending", // Default value for status
+    status: "Pending",
     priority: "Low",
     time: "",
-    deadline: ""
+    deadline: "",
+    username:username
   });
-  const { username } = useContext(UserNameContext);
   const nav = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -33,7 +34,7 @@ export const AddTask = () => {
     const currentTime = new Date().toLocaleString();
     const taskWithIdAndTime = {
       ...newTask,
-      id: Date.now(), // Using timestamp for a unique ID
+      id: Date.now(),
       time: currentTime
     };
 
@@ -91,15 +92,15 @@ export const AddTask = () => {
         <div className='text-start d-flex flex-column mt-3'>
           <label className='inputlabel mb-2'>Status </label>
           <div>
-            <Input className='ms-3 align-top' type='radio' name='status' value="Pending" checked={newTask.status === "Pending"} onChange={handleInputChange} />
+            <Input className='ms-3 align-top' type='radio' name='status' value="Pending" disabled checked={newTask.status === "Pending"} onChange={handleInputChange} />
             <label className='inputlabel fs-6 fw-normal align-baseline ms-1'>Pending</label>
           </div>
           <div>
-            <Input className='ms-3 align-top' type='radio' name='status' value="Approved" checked={newTask.status === "Approved"} onChange={handleInputChange} />
+            <Input className='ms-3 align-top' type='radio' name='status' disabled value="Approved" checked={newTask.status === "Approved"} onChange={handleInputChange} />
             <label className='inputlabel fs-6 fw-normal align-baseline ms-1'>Approved</label>
           </div>
           <div>
-            <Input className='ms-3 align-top' type='radio' name='status' value="Completed" checked={newTask.status === "Completed"} onChange={handleInputChange} />
+            <Input className='ms-3 align-top' type='radio' name='status' disabled value="Completed" checked={newTask.status === "Completed"} onChange={handleInputChange} />
             <label className='inputlabel fs-6 fw-normal align-baseline ms-1'>Completed</label>
           </div>
         </div>

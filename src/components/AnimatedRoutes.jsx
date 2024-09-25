@@ -11,6 +11,7 @@ import { AdminLogin } from './AdminLogin';
 import {UserDashboard} from './UserDashboard'
 import { AddTask } from './AddTask';
 import { EditTask } from './EditTask';
+import { AdminEdit } from './AdminEdit';
 
 export const AnimatedRoutes = () => {
     const location = useLocation()
@@ -25,6 +26,7 @@ export const AnimatedRoutes = () => {
     <Route path='/user' element={<UserDashboard/>} />
     <Route path='/addtask'  element={<AddTask/>} />
     <Route path='/edittask/:taskId' element={<EditTask />} />
+    <Route path='/adminedit/:taskId' element={<AdminEdit />} />
   </Routes>
   </AnimatePresence>
   )

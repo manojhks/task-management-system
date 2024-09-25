@@ -7,7 +7,7 @@
   --body-bg-color: linear-gradient(to bottom,#d5c3da 0%,#d5c3df 20%, rgba(255, 255, 249, 0.1) 50%, #d5c3df 80%),
                   linear-gradient(to right,#d5c3df 0%,#d5c3df 15%, rgba(255, 255, 249, 0.1) 50%, #d5c3df 85%);
 }
-.app,.home,.adminlogin,.login, .userdash{
+.app,.home,.adminlogin,.login, .userdash, .admindash{
   min-height: 100vh;
   max-height: fit-content;
   background: var(--body-bg-color);
@@ -142,15 +142,17 @@
     text-shadow: 1px 1px 0px #001011;
     font-weight: bolder;
    }
+   .navbar-brand:hover{
+    color: var(--text-color-dark);
+    text-shadow: 2px 2px 0px #001011;
+   }
    .avatar {
     height: fit-content;
     width: fit-content;
     border-radius: 20px;
     padding: 0 10px;
-    /* box-shadow: 0px 0px 0px 2px black; */
     color: var(--bg-color-light);
     text-shadow: 0.5px 1px 1px var(--text-color-light);
-    /* background-color: #e1e1e1; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
@@ -188,6 +190,7 @@
   background-color: var(--bg-color-light-dark);
 }
 .taskbox{
+  min-width: 310px;
   margin-bottom: 20px;
   border: 5px solid var(--bg-color-light);
   padding: 10px 20px;
@@ -195,12 +198,13 @@
   border-radius: 10px;
   transition: 0.5s;
   letter-spacing: 1px;
+  background: #ededf472;
 }
 .taskbox:hover{
   scale: 1.1;
   transition: 0.5s;
   .edit-task-btn{
-    visibility:visible;
+    display: inline-block;
   }
 }
 .taskbox-title, .taskbox-description, .taskbox-status, .taskbox-priority, .taskbox-username {
@@ -222,19 +226,22 @@
   bottom: 60px;
 }
 .edit-task-btn{
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  border: none;
+  border: solid 1px gray;
+  margin-right: 10px;
+  padding:5px 10px;
   background-color: none;
   background-color: #f4a72a00;
-  border-radius: 10px;
-  visibility: hidden;
+  border-radius: 5px;
+  display: inline-block;
   transition: 0.3s;
 }
 .edit-task-btn:hover{
-box-shadow: 0px 0px 4px black;
+  background-color: var(--text-color-dark);
+box-shadow: 0px 1px 2px black;
 transition: 0.3s;
+}
+.adminnav{
+  background-color: var(--bg-color-dark);
 }
 
 @media only screen and (max-width:992px){

@@ -32,7 +32,7 @@ export const AdminLogin = () => {
                 setTimeout(() => {
                     setPassword("")
                     nav('/admin')
-                }, 3000);
+                }, 1000);
             }
             else{
                 setError("Incorrect Secret key. Contact Your Admin")
@@ -49,7 +49,7 @@ export const AdminLogin = () => {
         if (success) {
           const timer = setTimeout(() => {
             setSuccess(null);
-          }, 3000);
+          }, 1000);
           return () => clearTimeout(timer);
         }
       }, [success]);
@@ -58,7 +58,7 @@ export const AdminLogin = () => {
         if (error) {
           const timer = setTimeout(() => {
             setError(null);
-          }, 3000);
+          }, 1000);
           return () => clearTimeout(timer);
         }
       }, [error]);
@@ -76,8 +76,8 @@ export const AdminLogin = () => {
             <Input id='adminIn' className='input' type='password' name='passkey' placeholder='Secret key please...' onChange={handleAdminKey} />
             </div>
             <button className='click pt-2' onClick={handleAdminLogin} ><p>Login</p></button>
-            {success&& <p style={{backgroundColor:"#ffc0cb",marginBottom:"-15px",borderRadius:"3px",color:"green"}} >{success}</p>}
-            {error&& <p style={{backgroundColor:"#ffc0cb",marginBottom:"-15px",borderRadius:"3px",color:"red"}} >{error}</p>}
+            {success && <p style={{ marginTop: "5px", marginBottom: "-15px", borderRadius: "3px", color: "#ffc0cb", textShadow: "1px 1px black" }}>{success}</p>}
+            {error && <p style={{ marginTop: "5px", marginBottom: "-15px", borderRadius: "3px", color: "#ffc0cb", textShadow: "1px 1px black" }}>{error}</p>}
         </div>
     </motion.div>
   )

@@ -7,47 +7,14 @@
       "password": "12345",
       "tasks": [
         {
-          "id": 1,
-          "title": "Task 1",
-          "description": "Complete the project",
+          "id": "1",
+          "title": "T1",
+          "description": "New",
           "status": "Pending",
-          "priority": "High"
-        },
-        {
-          "id": 2,
-          "title": "aaaa",
-          "description": "sssss",
-          "status": "Pending",
-          "priority": "Low",
-          "time": "9/23/2024, 10:21:17 AM",
-          "deadline": "2024-09-27"
-        },
-        {
-          "id": 3,
-          "title": "aaaa",
-          "description": "sasa",
-          "status": "Pending",
-          "priority": "Low",
-          "time": "9/23/2024, 10:23:59 AM",
-          "deadline": "2024-09-27"
-        },
-        {
-          "id": 5,
-          "title": "asssa",
-          "description": "ssss",
-          "status": "Pending",
-          "priority": "Low",
-          "time": "9/23/2024, 11:26:36 AM",
-          "deadline": "2024-09-27"
-        },
-        {
-          "id": 6,
-          "title": "a",
-          "description": "a",
-          "status": "Pending",
-          "priority": "Low",
-          "time": "9/23/2024, 12:17:21 PM",
-          "deadline": "2024-09-20"
+          "priority": "Medium",
+          "time": "9/24/2024, 1:53:15 PM",
+          "deadline": "2222-03-22",
+          "username": "manojh30"
         }
       ]
     },
@@ -56,17 +23,7 @@
       "username": "manojh",
       "email": "manojh@gmail.com",
       "password": "145",
-      "tasks": [
-        {
-          "id": 4,
-          "title": "gggg",
-          "description": "ggggg",
-          "status": "Pending",
-          "priority": "Medium",
-          "time": "9/23/2024, 10:27:46 AM",
-          "deadline": "2024-09-28"
-        }
-      ]
+      "tasks": []
     }
   ],
   "admin": [
@@ -77,58 +34,14 @@
   ],
   "task": [
     {
-      "id": 1,
-      "title": "fddfgdg",
-      "description": "dfggdff",
-      "status": "Pending",
-      "priority": "Low",
-      "time": "9/23/2024, 10:01:49 AM",
-      "deadline": "2024-09-26"
-    },
-    {
-      "id": 2,
-      "title": "aaaa",
-      "description": "sssss",
-      "status": "Pending",
-      "priority": "Low",
-      "time": "9/23/2024, 10:21:17 AM",
-      "deadline": "2024-09-27"
-    },
-    {
-      "id": 3,
-      "title": "aaaa",
-      "description": "sasa",
-      "status": "Pending",
-      "priority": "Low",
-      "time": "9/23/2024, 10:23:59 AM",
-      "deadline": "2024-09-27"
-    },
-    {
-      "id": 4,
-      "title": "gggg",
-      "description": "ggggg",
+      "id": "1",
+      "title": "T1",
+      "description": "New",
       "status": "Pending",
       "priority": "Medium",
-      "time": "9/23/2024, 10:27:46 AM",
-      "deadline": "2024-09-28"
-    },
-    {
-      "id": 5,
-      "title": "asssa",
-      "description": "ssss",
-      "status": "Pending",
-      "priority": "Low",
-      "time": "9/23/2024, 11:26:36 AM",
-      "deadline": "2024-09-27"
-    },
-    {
-      "id": 6,
-      "title": "a",
-      "description": "a",
-      "status": "Pending",
-      "priority": "Low",
-      "time": "9/23/2024, 12:17:21 PM",
-      "deadline": "2024-09-20"
+      "time": "9/24/2024, 1:53:15 PM",
+      "deadline": "2222-03-22",
+      "username": "manojh30"
     }
   ]
 }

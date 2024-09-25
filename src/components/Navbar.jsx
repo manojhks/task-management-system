@@ -1,36 +1,3 @@
-// import React, { useContext } from 'react';
-// import userName from '../context/UsernameContext';
-
-// export const Navbar = () => {
-//   const { username } = useContext(userName);
-//   return (
-//     <div className=' position-fixed z-2 top-0'>
-//       <nav className="navbar navbar-expand-sm navbar-dark fixed-top">
-//         <div className="container">
-//           <a className="navbar-brand" href="/user">
-//             Task <span className="navbar-brand-sub">Manager</span>
-//           </a>
-//           <div>
-//           {username ? (
-//             <p className='pfp avatar' title={username}>
-//               {username[0].toUpperCase()}
-//             </p>
-//           ) : (
-//             <p className='pfp m-0 shadow-none text-light' title={username} style={{fontSize:"42px"}}><i className ="bi bi-person-circle"></i></p>
-//           )}
-//         {/* <ul className='pfp-drop'>
-//           <li>{username}</li>
-//           <li>Logout</li>
-//         </ul> */}
-//         </div>
-//         </div>
-//       </nav>
-//     </div>
-//   );
-// };
-
-
-
 import React, { useContext } from 'react';
 import UserNameContext from '../context/UsernameContext';
 import { motion } from 'framer-motion'
@@ -42,7 +9,7 @@ export const Navbar = () => {
 
   const handleLogout = () => {
     logout();
-    nav('/login')
+    nav('/')
   };
 
   return (
