@@ -33,6 +33,7 @@ export const AdminDashboard = () => {
     <button className='btn logout text-light' onClick={()=> nav('/')}>Logout</button>
     </div>
     </div>
+
     <div className='container'>
     {task.length > 0 ? (
             <div className='gap-3' style={{ height: "fit-content", width: "fit-content", display: "flex", flexWrap: "wrap", position: "relative", top: "79px" }}>
@@ -45,7 +46,6 @@ export const AdminDashboard = () => {
                   <p className='taskbox-username'><i>Assignee:</i>@{task.username}</p>
 
                   <button className='edit-task-btn' onClick={() => handleEditClick(task.id)}>Edit <i className='bi bi-pencil'></i></button>
-                  {/* <button className='edit-task-btn' onClick={() => handleEditClick(task.id)}>Delete <i className='bi bi-trash'></i></button> */}
                 </div>
               ))}
             </div>

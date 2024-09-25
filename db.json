@@ -7,14 +7,24 @@
       "password": "12345",
       "tasks": [
         {
-          "id": "1",
           "title": "T1",
-          "description": "New",
-          "status": "Pending",
+          "description": "Task 1",
+          "status": "Approved",
           "priority": "Medium",
           "time": "9/24/2024, 1:53:15 PM",
           "deadline": "2222-03-22",
-          "username": "manojh30"
+          "username": "manojh30",
+          "id": 1
+        },
+        {
+          "title": "T2",
+          "description": "Task 2",
+          "status": "Pending",
+          "priority": "Low",
+          "time": "9/25/2024, 10:40:54 AM",
+          "deadline": "2024-10-30",
+          "username": "manojh30",
+          "id": 2
         }
       ]
     },
@@ -23,7 +33,18 @@
       "username": "manojh",
       "email": "manojh@gmail.com",
       "password": "145",
-      "tasks": []
+      "tasks": [
+        {
+          "id": "3",
+          "title": "T3",
+          "description": "Task 3",
+          "status": "Pending",
+          "priority": "Low",
+          "time": "9/25/2024, 10:42:03 AM",
+          "deadline": "2024-09-30",
+          "username": "manojh"
+        }
+      ]
     }
   ],
   "admin": [
@@ -36,12 +57,32 @@
     {
       "id": "1",
       "title": "T1",
-      "description": "New",
-      "status": "Pending",
+      "description": "Task 1",
+      "status": "Approved",
       "priority": "Medium",
       "time": "9/24/2024, 1:53:15 PM",
       "deadline": "2222-03-22",
       "username": "manojh30"
+    },
+    {
+      "id": "2",
+      "title": "T2",
+      "description": "Task 2",
+      "status": "Pending",
+      "priority": "Low",
+      "time": "9/25/2024, 10:40:54 AM",
+      "deadline": "2024-10-30",
+      "username": "manojh30"
+    },
+    {
+      "id": "3",
+      "title": "T3",
+      "description": "Task 3",
+      "status": "Pending",
+      "priority": "Low",
+      "time": "9/25/2024, 10:42:03 AM",
+      "deadline": "2024-09-30",
+      "username": "manojh"
     }
   ]
 }
